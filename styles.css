@@ -1,1 +1,80 @@
-/* your code */
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    padding: 40px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+
+
+table {
+    width: 100%;
+    max-width: 750px;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+ 
+thead {
+    background-color: #225688;
+    color: #ffffff;
+}
+
+thead th {
+    padding: 18px 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+ 
+tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #d8dde6;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+tbody tr:hover {
+    background-color: #c2d8ee;
+}
+
+tbody td {
+    padding:15px 15px;
+    font-size: 15px;
+    color: #333333;
+}
+
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 600px) {
+    table {
+        font-size: 13px;
+    }
+    
+    thead th, tbody td {
+        padding: 12px 10px;
+    }
+}
